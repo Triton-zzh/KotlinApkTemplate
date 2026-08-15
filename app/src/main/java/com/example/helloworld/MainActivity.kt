@@ -1,4 +1,4 @@
-package com.pop.notice
+package com.example.helloworld
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 class MainActivity : AppCompatActivity() {
