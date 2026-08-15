@@ -124,3 +124,5 @@ cd ./bash
 ./utils-generate-keystore
 ```
 Then create a GitHub release to get your signed APK.
+
+test build
