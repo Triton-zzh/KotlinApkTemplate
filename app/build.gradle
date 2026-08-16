@@ -28,8 +28,6 @@ android {
 buildTypes {
     debug {
         debuggable true
-        testOnly false
-        minifyEnabled false
     }
     release {
         minifyEnabled false
