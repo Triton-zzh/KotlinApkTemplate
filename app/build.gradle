@@ -25,17 +25,17 @@ android {
       keyPassword System.getenv("RELEASE_KEY_PASSWORD")
     }
   }
-  buildTypes {
-    release {
-      minifyEnabled true
-      shrinkResources true
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-      signingConfig signingConfigs.release
-    }
+buildTypes {
     debug {
-      applicationIdSuffix ".debug"
+        debuggable true
+        testOnly false
+        minifyEnabled false
     }
-  }
+    release {
+        minifyEnabled false
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+}
 
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
